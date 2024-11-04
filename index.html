@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23.7孟响</title>
+    <style>
+        .chujihezi{
+            width: 700px;
+            height: 200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .chujiliebiao{
+            padding: 3px;
+        }
+        .chujiliebiao>li{
+            list-style: none;
+            margin: 3px 0px;
+            width: 90px;
+            height: 40px;
+            background-color: #8fd9e2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            transition:width 0.2s linear;
+        }
+        
+        .chujiliebiao>li:hover{
+            width: 95px;
+        }
+        a{
+            text-decoration: none;
+            color: #0c4c55;
+            font-size: 20px;
+        }
+        .erjihezi{
+            position: absolute;
+            top: 87px;
+            left: 850px;
+            width: 240px;
+            height: 150px;
+            background-color: #8fd9e2;
+            border-radius: 5px;
+            display: none;
+        }
+        .erjiliebiao{
+            padding: 0px;
+        }
+        .erjiliebiao li{
+            display: flex;
+            justify-content: left;
+            list-style: none;
+            margin: 13px;
+        }
+        .chujiliebiao>li:hover>.erjihezi{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="chujihezi">
+        <ul class="chujiliebiao">
+            <li>
+                <a href="#">入梦</a>
+            </li>
+            <li>
+                <a href="#">探索</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">莫兰书店</a></li>
+                        <li><a href="#">奥里弗拉姆拍卖行</a></li>
+                        <li><a href="#">蜕衣俱乐部</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">交谈</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
